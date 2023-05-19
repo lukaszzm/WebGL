@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>WebGL - Cube</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="Render();">
+    <div>
+        <canvas id="main-canvas" width="600" height="400">
+            Your browser does not support HTML5
+        </canvas>
+        <form id="form">
+                <label for="length">Długość boku</label>
+                <input id="length" type="number" min="0" max="100" placeholder="Tutaj wpisz długość boku" required />
+                <label for="color1">Kolor pierwszego boku</label> 
+                <div class="input-section">
+                    <input id="colorR1" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorG1" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorB1" type="number" min="0" max="255" placeholder="0-255" required />
+                </div>
+                <label for="color2">Kolor drugiego boku</label>
+                <div class="input-section">
+                    <input id="colorR2" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorG2" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorB2" type="number" min="0" max="255" placeholder="0-255" required />
+                </div>
+                <label for="color3">Kolor trzeciego boku</label>
+                <div class="input-section">
+                    <input id="colorR3" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorG3" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorB3" type="number" min="0" max="255" placeholder="0-255" required />
+                </div>
+                <label for="color4">Kolor czwartego boku</label>
+                <div class="input-section">
+                    <input id="colorR4" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorG4" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorB4" type="number" min="0" max="255" placeholder="0-255" required />
+                </div>
+                <label for="color5">Kolor piątego boku</label>
+                <div class="input-section">
+                    <input id="colorR5" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorG5" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorB5" type="number" min="0" max="255" placeholder="0-255" required />
+                </div>
+                <label for="color6">Kolor szóstego boku</label>
+                <div class="input-section">
+                    <input id="colorR6" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorG6" type="number" min="0" max="255" placeholder="0-255" required />
+                    <input id="colorB6" type="number" min="0" max="255" placeholder="0-255" required />
+                </div>
+            <button onclick="reRender(e)">Generuj</button>
+        </form>
+            <button onClick="reRenderRandom()">Generuj z losowymi wartościami</button>
+  
+    </div>
+    <div>
+    <script src="https://cdn.jsdelivr.net/npm/gl-matrix@3/gl-matrix.js"> </script>
+    <script src="script.js"> </script>
+  </body>
+</html>
